@@ -1,14 +1,23 @@
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 45px;
   margin-bottom: 50px;
+  margin: 45px 5vw 50px 5vw;
+  
   nav {
     display: flex;
     ul {
       display: flex;
       padding: 0px;
       gap: 57px;
+      a {
+        text-decoration: none;
+        color: black;
+        &.active {
+          text-decoration: underline;
+        }
+      }
       li {
         display: flex;
         align-items: center;

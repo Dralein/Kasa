@@ -1,4 +1,5 @@
-import logoKasa from "../assets/kasa.svg"
+import logoKasa from "../assets/Logo/kasa.svg"
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
@@ -7,8 +8,12 @@ const Header = () => {
       <img src={logoKasa} alt="Logo Kasa" />
       <nav>
         <ul>
+          <NavLink to="/">
           <li>Accueil</li>
-          <li>A propos</li>
+          </NavLink>
+          <NavLink to="/about">
+          <li>A Propos</li>
+          </NavLink>
         </ul>
       </nav>
     </header>
