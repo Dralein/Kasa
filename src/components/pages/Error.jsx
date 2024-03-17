@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const error404 = () => {
   return (
-    <main>
+    <main className="error">
       <h1>404</h1>
       <h2>Oups! La page que vous demandez n&apos;existe pas.</h2>
       <NavLink to='/'>
