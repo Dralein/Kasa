@@ -1,12 +1,19 @@
-import bannerimg from "../assets/images/homebanner.webp"
+import PropTypes from 'prop-types';
 
-const Banner = () => {
+
+const Banner = ({ imageUrl, title }) => {
   return (
     <section className="banner">
-    <img src={bannerimg} alt="" />
-    <h1>Chez vous, partout et ailleurs</h1>
+    <img src={imageUrl} alt="" />
+    <h1>{title}</h1>
   </section>
   );
 };
+
+Banner.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+};
+
 
 export default Banner;

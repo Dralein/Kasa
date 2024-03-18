@@ -1,11 +1,12 @@
 import Banner from "../Banner";
 import Thumb from "../Thumb";
 import logements from "../../database/logements.json"
+import imagebanner from "../../assets/images/homebanner.webp"
 
 const Home = () => {
   return (
     <main>
-      <Banner />
+      <Banner  imageUrl={imagebanner} title="Nouveau titre pour la bannière"/>
       <section className="gallery">
         <Thumb logements={logements} />
       </section>

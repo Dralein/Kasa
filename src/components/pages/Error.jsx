@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 
+
 const error404 = () => {
   return (
     <main className="error">
