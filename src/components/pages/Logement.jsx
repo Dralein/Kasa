@@ -1,8 +1,8 @@
 import {useParams} from 'react-router-dom';
 import logements from '../../database/logements.json';
 import Slideshow from '../Slideshow';
-import {Navigate} from 'react-router-dom'
 import Rating from '../Rating';
+import Collapse from '../../components/Collapse'
 
 const findLogementID = (id) => {
   return logements.find((logement) => logement.id === id);
@@ -16,9 +16,6 @@ const Logement = () => {
   const rating = logement.rating;
   const fullName = logement.host.name;
   const [firstName, lastName] = fullName.split(" ");
-  if (!id) {
-    return <Navigate to="*" replace />;
-  }
   return (
     <main className='logement'>
       <Slideshow pictures={pictures}/>
@@ -31,7 +28,6 @@ const Logement = () => {
       <li key={index}>{tag}</li>
       ))}
       </ul>
-      <p> <strong>Description</strong> {logement.description}</p>
       </div>
       <div className='rightposition'>
       <div className='host-name'>
@@ -41,13 +37,14 @@ const Logement = () => {
       <div className='rating-flexend'>
       <Rating rating={rating} />
       </div>
-      <ul>
-      {logement.equipments.map((equipment, index) => (
-        <li key={index}>{equipment}</li>
-      ))} 
-      </ul>
       </div>
       </section>
+      <div className='section-collapse'>
+        <Collapse title='Description' content={logement.description}/>
+        <Collapse title='Équipement' content={logement.equipments.map((equipment, index) => (
+        <li key={index}>{equipment}</li>
+      ))} />
+      </div>
     </main>
   );
 };

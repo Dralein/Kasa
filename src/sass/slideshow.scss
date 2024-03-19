@@ -1,0 +1,47 @@
+.pictures {
+  position: relative;
+  height: 50vh;
+  .logement-img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .left,
+  .right {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+    transition: box-shadow 0.3s;
+  }
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
+  .display-img-none {
+    display: none;
+  }
+
+  .left:hover,
+  .right:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+
+  .slide-number {
+    bottom: 25px;
+    right: 50%;
+    position: absolute;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+}

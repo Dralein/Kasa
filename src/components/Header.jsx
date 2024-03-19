@@ -1,6 +1,5 @@
-import logoKasa from "../assets/Logo/kasa.svg"
+import logoKasa from "../assets/Logo/kasa.svg";
 import { NavLink } from "react-router-dom";
-
 
 const Header = () => {
   return (
@@ -9,10 +8,10 @@ const Header = () => {
       <nav>
         <ul>
           <NavLink to="/">
-          <li>Accueil</li>
+            <li>Accueil</li>
           </NavLink>
           <NavLink to="/about">
-          <li>A Propos</li>
+            <li>A Propos</li>
           </NavLink>
         </ul>
       </nav>

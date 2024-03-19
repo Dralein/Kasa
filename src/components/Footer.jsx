@@ -1,4 +1,4 @@
-import blacklogokasa from "../assets/Logo/blackkasa.svg"
+import blacklogokasa from "../assets/Logo/blackkasa.svg";
 
 const Footer = () => {
   return (
