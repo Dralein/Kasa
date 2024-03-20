@@ -1,4 +1,5 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import logements from "../../database/logements.json";
 import Slideshow from "../Slideshow";
 import Rating from "../Rating";
@@ -11,8 +12,21 @@ const findLogementID = (id) => {
 const Logement = () => {
   const { id } = useParams();
   const logement = findLogementID(id);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!logement) {
+      navigate("*"); 
+    }
+  }, [logement, navigate]);
+
+  if (!logement) {
+    return null;
+  }
+
   const fullName = logement.host.name;
   const [firstName, lastName] = fullName.split(" ");
+
   return (
     <main className="logement">
       <Slideshow pictures={logement.pictures} />
@@ -33,7 +47,7 @@ const Logement = () => {
               <br />
               {lastName}
             </p>
-            <img src={logement.host.picture}></img>
+            <img src={logement.host.picture} alt={`${firstName} ${lastName}`} />
           </div>
           <div className="rating-flexend">
             <Rating rating={logement.rating} />

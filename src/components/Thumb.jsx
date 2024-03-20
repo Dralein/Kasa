@@ -15,3 +15,4 @@ Thumb.propTypes = {
 };
 
 export default Thumb;
+
