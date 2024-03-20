@@ -1,12 +1,19 @@
 .section-collapse {
+  .accordion-title[aria-expanded="false"] {
+    border-radius: 5px 5px 5px 5px;
+  }
+  .accordion-title[aria-expanded="true"] {
+    border-radius: 5px 5px 0px 0px;
+  }
   .accordion-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    cursor: pointer;
     background-color: #ff6060;
     padding: 10px 20px 10px 15px;
-    border-radius: 5px 5px 0 0;
+    .toggle-size {
+      cursor: pointer;
+    }
     h2 {
       margin: 0;
       color: #fff;
@@ -30,6 +37,11 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
+    p {
+      li {
+        list-style-type: none;
+      }
+    }
   }
 
   .accordion-content[aria-expanded="true"] {

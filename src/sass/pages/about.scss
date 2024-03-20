@@ -1,0 +1,22 @@
+.about {
+  margin: 0 7.5vw;
+  .section-collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px 108px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about {
+    margin-top: 19px;
+    .section-collapse {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 19px 0;
+    }
+  }
+}
+

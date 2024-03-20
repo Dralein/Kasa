@@ -12,12 +12,13 @@ const Collapse = ({ title, content }) => {
 
   return (
     <div className="accordion">
-      <div className="accordion-title">
+      <div className="accordion-title" aria-expanded={isActive}>
         <h2>{title}</h2>
         <>
           {isActive ? (
             <img
               src={svg}
+              className="toggle-size"
               alt="arrow"
               style={arrowStyle}
               onClick={() => setIsActive(!isActive)}
@@ -25,6 +26,7 @@ const Collapse = ({ title, content }) => {
           ) : (
             <img
               src={svg}
+              className="toggle-size"
               alt="arrow"
               style={arrowStyle}
               onClick={() => setIsActive(!isActive)}

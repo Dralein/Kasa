@@ -16,3 +16,14 @@ footer {
     margin-top: 48px;
   }
 }
+
+@media (max-width:1000px) {
+  footer {
+    padding: 66px 120.313px 58px 121.094px; 
+    p{
+      font-size: 12px; 
+      margin-top: 12px;
+    }
+  }
+  
+}

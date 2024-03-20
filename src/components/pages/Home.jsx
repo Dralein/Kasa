@@ -5,7 +5,7 @@ import imagebanner from "../../assets/images/homebanner.webp";
 
 const Home = () => {
   return (
-    <main>
+    <main className="home-main">
       <Banner imageUrl={imagebanner} title="Chez vous, partout et ailleurs" />
       <section className="gallery">
         <Thumb logements={logements} />

@@ -6,8 +6,7 @@
     font-size: 288px;
     font-style: normal;
     font-weight: 700;
-    margin-top: 134px;
-    margin-bottom: 134px;
+    margin: 134px 0;
   }
   h2 {
     color: #ff6060;
@@ -25,5 +24,23 @@
     text-decoration-line: underline;
     margin-top: 139px;
     margin-bottom: 139px;
+  }
+}
+
+@media (max-width:1000px) {
+  .error {
+    margin: 0 30px;
+    h1 {
+      font-size: 96px; 
+      margin: 113px 0;
+    }
+    h2 {
+      font-size: 18px; 
+    }
+    p {
+      font-size: 14px; 
+      font-size: 18px;
+      margin: 113px 0;
+    }
   }
 }

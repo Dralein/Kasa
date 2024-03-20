@@ -34,10 +34,10 @@ const Slideshow = ({ pictures }) => {
         );
       })}
       <button className="left" onClick={prevSlide}>
-        <img src={leftarrow} alt="leftarrow"></img>
+        <img src={leftarrow} className="left-size" alt="leftarrow"></img>
       </button>
       <button className="right" onClick={nextSlide}>
-        <img src={rightarrow} alt="rightarrow"></img>
+        <img src={rightarrow} className="right-size" alt="rightarrow"></img>
       </button>
       <span className="slide-number">{`${
         currentSlide + 1
