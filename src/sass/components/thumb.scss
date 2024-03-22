@@ -11,7 +11,6 @@
   h3 {
     margin: 0 0 0 20px;
     color: white;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
     position: relative;
@@ -21,9 +20,8 @@
   }
 }
 
-@media (max-width:1000px) {
+@media (max-width: 1024px) {
   .thumb {
     height: 225px;
   }
-  
 }

@@ -16,7 +16,7 @@ const Logement = () => {
 
   useEffect(() => {
     if (!logement) {
-      navigate("*"); 
+      navigate("*");
     }
   }, [logement, navigate]);
 

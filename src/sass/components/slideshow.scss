@@ -39,9 +39,14 @@
     right: 50%;
     position: absolute;
     color: #fff;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide-number {
+    display: none;
   }
 }

@@ -9,13 +9,13 @@ const Slideshow = ({ pictures }) => {
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === pictures.length - 1 ? 0 : prevSlide + 1
+      prevSlide == pictures.length - 1 ? 0 : prevSlide + 1
     );
   };
 
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? pictures.length - 1 : prevSlide - 1
+      prevSlide == 0 ? pictures.length - 1 : prevSlide - 1
     );
   };
 
@@ -25,7 +25,7 @@ const Slideshow = ({ pictures }) => {
         return (
           <img
             className={`logement-img ${
-              index === currentSlide ? "display-img" : "display-img-none"
+              index == currentSlide ? "display-img" : "display-img-none"
             }`}
             src={picture}
             alt={picture.title}

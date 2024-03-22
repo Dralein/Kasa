@@ -11,7 +11,7 @@ const Banner = ({ imageUrl, title }) => {
 
 Banner.propTypes = {
   imageUrl: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
 };
 
 export default Banner;

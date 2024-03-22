@@ -5,11 +5,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 24px;
-    .leftposition {
-      background-color: #fff;
-    }
     .rightposition {
-      background-color: #fff;
       .host-name {
         display: flex;
         flex-direction: row;
@@ -19,7 +15,6 @@
         p {
           color: #ff6060;
           text-align: right;
-          font-family: Montserrat;
           font-size: 18px;
           font-weight: 500;
         }
@@ -36,14 +31,12 @@
     }
     h2 {
       color: #ff6060;
-      font-family: Montserrat;
       font-size: 36px;
       font-weight: 500;
       margin: 0px;
     }
     h3 {
       color: #000;
-      font-family: Montserrat;
       font-size: 18px;
       font-weight: 500;
       margin: 0px;
@@ -67,7 +60,6 @@
       }
     }
   }
-
   .section-collapse {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -9,7 +9,7 @@ const About = () => {
   ));
   return (
     <main className="about">
-      <Banner imageUrl={imagebanner} title="" />
+      <Banner imageUrl={imagebanner} />
       <section className="section-collapse">{collapsecontent}</section>
     </main>
   );
