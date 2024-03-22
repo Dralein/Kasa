@@ -10,28 +10,25 @@
   .left,
   .right {
     position: absolute;
-    top: 42%;
+    top: 50%;
     cursor: pointer;
-    padding: 10px;
     background: none;
     border: none;
     transition: box-shadow 0.3s;
+    transform: translateY(-50%);
   }
   .left {
     left: 0;
+    margin-left: 23px;
   }
 
   .right {
     right: 0;
+    margin-right: 23px;
   }
 
   .display-img-none {
     display: none;
-  }
-
-  .left:hover,
-  .right:hover {
-    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   }
 
   .slide-number {

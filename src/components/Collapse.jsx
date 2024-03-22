@@ -42,7 +42,7 @@ const Collapse = ({ title, content }) => {
 };
 
 Collapse.propTypes = {
-  content: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
   title: PropTypes.string.isRequired,
 };
 

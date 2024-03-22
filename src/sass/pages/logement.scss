@@ -57,6 +57,7 @@
         padding: 5px 30px;
         display: flex;
         align-items: center;
+        white-space: nowrap;
       }
     }
   }
@@ -67,7 +68,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .logement {
     margin: 27px 20px 27px 20px;
     .left-size,
