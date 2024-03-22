@@ -7,12 +7,12 @@ const Header = () => {
       <img src={logoKasa} alt="Logo Kasa" />
       <nav>
         <ul>
-          <NavLink to="/">
-            <li>Accueil</li>
-          </NavLink>
-          <NavLink to="/about">
-            <li>A Propos</li>
-          </NavLink>
+        <li>
+            <NavLink to="/">Accueil</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">A Propos</NavLink>
+          </li>
         </ul>
       </nav>
     </header>
